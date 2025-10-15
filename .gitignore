@@ -1,0 +1,21 @@
+# Dependency directories
+vendor/
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Project specific
+IMPROVEMENTS_SUMMARY.md

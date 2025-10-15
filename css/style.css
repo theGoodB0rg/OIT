@@ -1,0 +1,497 @@
+@font-face {
+    font-family: handFont;
+    src: url(../fonts/hand.ttf);
+}
+
+@font-face {
+    font-family: signFont;
+    src: url(../fonts/sign.otf);
+}
+
+body.landing-page {
+    scroll-behavior: smooth;
+}
+
+body.landing-page * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.landing-page .bg {
+    padding-top: 10px;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/bg.jpg);
+    background-size: cover;
+}
+
+body.landing-page .bg1 {
+    padding-top: 10px;
+    height: 80vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/bg.jpg);
+    background-size: cover;
+}
+
+body.landing-page nav {
+    padding: 0 40px;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+/* 
+body.landing-page .bg1 nav{
+    margin-bottom: 100px;
+} */
+
+body.landing-page .logo {
+    width: 190px;
+}
+
+body.landing-page nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    list-style: none;
+}
+
+body.landing-page nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+body.landing-page nav ul li a:hover {
+    text-decoration: underline;
+}
+
+body.landing-page nav ul a button {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(7, 79, 161);
+}
+
+body.landing-page .content {
+    padding: 0 60px;
+    width: 700px;
+    height: 70vh;
+}
+
+body.landing-page .content1 {
+    padding: 0 60px;
+    width: 800px;
+    margin: auto;
+    height: 50vh;
+    text-align: center;
+}
+
+body.landing-page .content h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+body.landing-page .content p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+body.landing-page .content a button,
+body.landing-page .content1 a button {
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(7, 79, 161);
+}
+
+body.landing-page .content1 h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+body.landing-page .content1 p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+body.landing-page .about__us {
+    padding: 0 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    min-height: 50vh;
+}
+
+body.landing-page .about__us h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+body.landing-page .about__us h1 span {
+    border-top: 3px solid #000;
+}
+
+body.landing-page .data {
+    padding-bottom: 40px;
+    font-size: 15px;
+    align-items: center;
+}
+
+body.landing-page .services {
+    padding: 0 60px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/services.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+}
+
+body.landing-page .services h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+body.landing-page .card__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+body.landing-page .card {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body.landing-page .card h3 {
+    margin-bottom: 10px;
+}
+
+body.landing-page .card p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+body.landing-page .card a button {
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(7, 79, 161);
+}
+
+body.landing-page .contact {
+    padding: 0 60px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    min-height: 90vh;
+}
+
+body.landing-page .contact h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+body.landing-page .form__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+body.landing-page .contact form {
+    width: calc(100% - 350px);
+    padding: 40px 60px 0;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+body.landing-page .form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+body.landing-page .form__group label {
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+body.landing-page .form__group input,
+body.landing-page .form__group textarea {
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #aaa;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+body.landing-page .form__group textarea {
+    height: auto;
+    padding-top: 10px;
+}
+
+body.landing-page .contact form button {
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(7, 79, 161);
+}
+
+body.landing-page .contact__us {
+    width: 300px;
+    background-color: rgb(7, 79, 161);
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+body.landing-page .contact__us p {
+    font-size: 20px;
+}
+
+body.landing-page .contact__us i {
+    margin-bottom: 30px;
+}
+
+body.landing-page .footer {
+    padding: 40px 60px;
+    height: 40vh;
+    overflow: hidden;
+    background-color: rgb(7, 79, 161);
+    color: #fff;
+}
+
+body.landing-page .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.landing-page .footer__data .footer__img {
+    width: 300px;
+}
+
+body.landing-page .footer__data h3 {
+    margin-bottom: 10px;
+}
+
+body.landing-page .footer__data ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+body.landing-page .footer__data ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body.landing-page .footer__data ul li a:hover {
+    text-decoration: underline;
+}
+
+body.landing-page .maths__services,
+body.landing-page .uenglish__services {
+    padding: 40px 60px;
+    padding-bottom: 40px;
+    min-height: 70vh;
+}
+
+body.landing-page .maths__services h1,
+body.landing-page .uenglish__services h1 {
+    margin-bottom: 20px;
+}
+
+body.landing-page .maths__services ul,
+body.landing-page .uenglish__services ul {
+    margin-left: 40px;
+}
+
+body.landing-page .maths__services ul li,
+body.landing-page .uenglish__services ul li {
+    margin-bottom: 5px;
+}
+
+body.landing-page .maths__services ul li a,
+body.landing-page .uenglish__services ul li a {
+    color: blue;
+}
+
+.physics__services{
+    padding: 0px 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: 70vh;
+}
+
+.physics__services h1{
+    margin-bottom: 20px;
+}
+
+.physics__services ul{
+    margin-left: 40px;
+}
+
+.physics__services ul li{
+    margin-bottom: 5px;
+}
+
+.physics__services ul li a{
+    color: blue;
+}
+
+.qua__services{
+    padding: 0px 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    min-height: 70vh;
+}
+
+.qua__services h1{
+    margin-bottom: 20px;
+}
+
+.qua__services p{
+    margin-bottom: 10px;
+}
+
+.qua__services input{
+    width: 60px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #aaa;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.qua__services button{
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(7, 79, 161);
+}
+
+.output__heading{
+    margin-top: 40px;
+}
+
+#output{
+    line-height: 30px;
+}
+
+#tt{
+    width: 150px;    
+}
+
+#addr{
+    text-align: right;
+}
+
+.content__letter{
+    display: flex;
+    background-color: #eee;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+
+.content__letter1, .content__letter2{
+    width: 50%;
+}
+
+.content__letter1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0px 40px;
+}
+
+.content__letter1 input{
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #aaa;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+.content__letter1 textarea{
+    outline: none;
+    border: none;
+    background-color: #aaa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content__letter1 button{
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(7, 79, 161);
+}
+
+.content__letter2{
+    min-height: 100vh;
+    padding: 0px 40px;
+    border-left: 2px #aaa solid;
+}
